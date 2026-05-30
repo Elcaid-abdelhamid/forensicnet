@@ -6,6 +6,7 @@ export function usePredict() {
   const [result, setResult]   = useState(null)
   const [loading, setLoading] = useState(false)
   const [error, setError]     = useState(null)
+  console.log("API_BASE =", API_BASE)
 
   const predict = useCallback(async (file) => {
     setLoading(true)
