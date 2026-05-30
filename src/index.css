@@ -1,0 +1,72 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-0: #02070d;
+  --bg-1: #070f18;
+  --bg-2: #0c1825;
+  --bg-3: #111f30;
+  --bg-4: #162438;
+
+  --cyan: #00d4ff;
+  --cyan-dim: rgba(0, 212, 255, 0.12);
+  --cyan-mid: rgba(0, 212, 255, 0.3);
+  --cyan-glow: rgba(0, 212, 255, 0.5);
+
+  --red: #ff3d5a;
+  --red-dim: rgba(255, 61, 90, 0.1);
+  --green: #00f0a0;
+  --green-dim: rgba(0, 240, 160, 0.1);
+  --amber: #ffb830;
+  --violet: #a78bfa;
+
+  --text-0: #edf6ff;
+  --text-1: #8ab4cf;
+  --text-2: #4a7a9b;
+  --text-3: #244b65;
+
+  --border: rgba(0, 180, 220, 0.1);
+  --border-2: rgba(0, 180, 220, 0.22);
+
+  --font-display: 'Syne', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --radius-s: 6px;
+  --radius-m: 10px;
+  --radius-l: 16px;
+  --radius-xl: 22px;
+}
+
+html {
+  font-size: 15px;
+  background: var(--bg-0);
+  color: var(--text-0);
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 70% 35% at 50% -5%, rgba(0, 100, 200, 0.2) 0%, transparent 65%),
+    var(--bg-0);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg-0); }
+::-webkit-scrollbar-thumb { background: var(--border-2); border-radius: 4px; }
+
+button {
+  font-family: var(--font-display);
+  cursor: pointer;
+}
